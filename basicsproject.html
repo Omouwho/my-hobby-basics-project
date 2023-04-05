@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheCodes Basics Project</title>
+
+    <style>
+        body {
+            background-color: #fff;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            color: #BA1918;
+            font-weight: bold;
+            font-size: 60px;
+            text-align: center;
+        }
+
+        h2 {
+            border: 1px solid #a16317;
+            border-radius: 18px;
+            color: #d4973a;
+            font-size: 23px;
+            font-style: italic;
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 50px;
+            display: block;
+            height: 500px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        p {
+            color: #66605e;
+            font-size: 17px;
+            line-height: 1.5;
+            text-align: center;
+            margin: 20px 10px;
+        }
+
+        .container {
+            background: linear-gradient(0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 60px;
+        }
+
+        .learn-more {
+            display: block;
+            text-decoration: none;
+            color: #f5a82c;
+            font-size: 20px;
+        }
+
+        .learn-more:hover {
+            text-decoration: underline;
+            color: #d4973a;
+        }
+
+        button {
+            display: block;
+            margin: 10px auto;
+            border: 2px solid #BA1918;
+            background-color: #BA1918;
+            color: white;
+            padding: 20px 30px;
+            font-size: 15px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover {
+            background-color: #d4973a;
+            color: #BA1918;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+        }
+
+        .footer {
+            padding: 10px;
+            color: #151414;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>
+            Love, Live, Cake
+        </h1>
+
+        <h2>
+            Just say Cheese...Cake
+        </h2>
+
+        <hr>
+
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/818/original/strawberry-cheesecake-12.jpeg?1678430632"
+            alt="Strawberry Cheesecake">
+
+        <hr>
+
+        <p>
+            <strong>Cheesecake</strong> is a sweet dessert consisting of one or more layers. The main, and thickest,
+            layer
+            consists of a
+            mixture of a soft, fresh cheese, eggs, and sugar. If there is a bottom layer, it most often consists of a
+            crust
+            or base made from
+            crushed cookies, graham crackers, pastry, or sometimes sponge cake.
+        <p>
+            <em>Cheesecakes are baked custards</em> with a relatively simple balance of soft cheese, eggs, sugar, and a
+            few
+            flavorings
+            typically atop a cookie or pastry base. There are four basic types of cheesecake, the variety and even brand
+            of cheese
+            affecting the texture and taste: Curd, such as farmer, pot, or cottage cheese; ricotta (Italian cheesecake);
+            quark
+            (German cheesecake); and cream cheese (New York cheesecake). In addition, there is an unbaked chiffon-like
+            version
+            (French cheesecake).
+        </p>
+
+        </p>
+
+        <a href="https://en.wikipedia.org/wiki/Cheesecake" target="_blank" class="learn-more">Learn more about
+            cheese cakes</a>
+
+        <br>
+
+        <button class="btn">
+            🧀 CheeseCake Recipe
+        </button>
+
+        <p class="footer">This page was built by Esther Omouwho</p>
+    </div>
+
+    <script>
+
+        function learn() {
+            let name = prompt("What is your name? ");
+            let email = prompt("What is your email? ");
+            let emoji = prompt("What is your favorite emoji? ");
+
+            if (name.length > 0 || email.length > 0 || emoji > 0) {
+                alert(`Thank you ${name}, you will get a free recipe via your email! ${emoji}`);
+            } else {
+                alert("Please fill in required details. ");
+            }
+        }
+
+        let btn = document.querySelector(".btn");
+        btn.addEventListener("click", learn);
+
+    </script>
+</body>
+
+</html>
